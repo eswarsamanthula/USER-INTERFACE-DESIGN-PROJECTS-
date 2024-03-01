@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Resume</title>
+</head>
+<style>
+html {
+	font-size: 10px;
+}
+body {
+	font-family: Inter, sans-serif;
+	background-color: rgb(12, 12, 12);
+	color: rgb(228, 220, 220);
+}
+
+/* common styles */
+img {
+	width: 100%;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+.description {
+	margin-top: 1rem;
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: #727171;
+}
+.title {
+	color: #ff7613;
+	font-weight: 700;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+.item_preTitle {
+	font-size: 1.4rem;
+	color: #727171;
+	font-weight: 300;
+}
+.item_title {
+	font-size: 1.6rem;
+	color: white;
+	font-weight: 500;
+	margin: 0.8rem;
+}
+.item_subtitle {
+	font-size: 1.4rem;
+	color: #727171;
+	font-weight: 400;
+}
+
+/* layouts */
+.container {
+	max-width: 1000px;
+	width: 90%;
+	margin:  auto;
+	display: grid;
+	padding: 5rem;
+	background: #070707;
+	grid-template-columns: 1fr 1fr;
+	gap: 4rem;
+}
+.profile {
+	grid-column: 1 / -1;
+	margin-bottom: 2rem;
+}
+.group-1,
+.group-2 {
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
+}
+.group-3 {
+	max-width: 700px;
+	width: 100%;
+	margin: auto;
+	grid-column: 1/-1;
+	display: flex;
+	flex-direction: row;
+	gap: 5rem;
+}
+
+/* profile */
+.profile_container {
+	display: flex;
+	gap: 2rem;
+}
+.profile_profileImg {
+	max-width: 250px;
+  border-radius: 100%;
+  
+}
+.profile_name_firstName {
+	color: white;
+	font-weight: 200;
+	font-size: clamp(2rem, 8vw, 4rem);
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: -0.8rem;
+}
+.profile_name_lastName {
+	color: #ff7613;
+	font-weight: 700;
+	font-size: clamp(2.5rem, 15vw, 7rem);
+	text-transform: uppercase;
+	display: block;
+}
+.profile_title {
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-transform: uppercase;
+  border-bottom: #ff7613;
+}
+
+/* Expertise */
+.skills_list {
+	margin-top: 1rem;
+	margin-left: 2rem;
+	line-height: 2;
+}
+
+/* Ref  */
+.ref_item {
+	margin-top: 2rem;
+}
+.ref_name {
+	font-size: 1.6rem;
+	font-weight: 700;
+}
+
+/* eduction */
+.edu_item {
+	margin-top: 2rem;
+}
+table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #884343;
+    }
+
+/* certification */
+.certification_item {
+	margin-top: 2rem;
+}
+/* exp */
+.exp_item {
+	margin-top: 2rem;
+}
+
+/* awards */
+.awards_item {
+	margin-top: 2rem;
+}
+/* Interests */
+.interest_items {
+	margin-top: 2rem;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+.interest_item {
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	color: #727171;
+}
+/* socials */
+.social_items {
+	margin-top: 2rem;
+}
+.social_item {
+	margin-top: 1.5rem;
+	font-size: 1.5rem;
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+	justify-content: flex-start;
+	color: #727171;
+}
+._img{
+  width: 10%;
+  height: 10%;
+}
+.social_item:hover {
+	color:#ff7613;
+}
+
+hr {
+	grid-column: 1/-1;
+	width: 80%;
+	margin: auto;
+	margin-top: 5rem;
+	margin-bottom: 1rem;
+	border: none;
+	border-top: 2px solid rgba(128, 128, 128, 0.229);
+}
+</style>
+<body>
+  <div class="container">
+    <div class="profile">
+      <div class="profile_container">
+        <div class="profile_profileImg">
+          <img src="c:\\Users\\eswar\\Downloads\\fotor-20240223214827.png" alt="eswar samanthula">
+        </div>
+        <div>
+          <h1 class="profile_name">
+            <span class="profile_name_firstName">Samanthula</span>
+            <span class="profile_name_lastName">Eswar</span>
+          </h1>
+          <p class="profile_title">Profile</p>
+          <p class="description profile_description">
+            I Passionate about tech and engineering. Strong academic foundation, eager to apply knowledge to real-world challenges. 
+            Enthusiastic learner staying updated on the latest advancements. 
+            Excited for growth in programming, contributing to innovative projects for a strong career foundation.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="group-1">
+      <div class="skills">
+        <h3 class="title">Expertise</h3>
+        <ol class="skills_list description">
+          <li>JavaScript</li>
+          <li>PHP & Wordpress</li>
+          <li>HTML CSS</li>
+          <li>React JS</li>
+          <li>MERN STACK</li>
+        </ol>
+      </div>
+      <div class="ref">
+        <h3 class="title">Reference</h3>
+        <div class="ref_item">
+          <h4 class="ref_name">Jane Smith, Project Manager</h4>
+          <ul>
+            <li><p class="description">XYZ Solutions,jane.smith@email.com, (555) 123-4567</p></li>
+          </ul>
+        </div>
+        <div class="ref_item">
+          <h4 class="ref_name">John Doe, SeniorSenior Manager</h4>
+          <ul>
+            <li><p class="description">ABC Corporation,johndoe@ejohndoe@email.com,(123) 456-7890</p></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="edu">
+        <h3 class="title">Education</h3>
+        <div class="edu_item">
+          <table>
+            <tr>
+              <th>Degree</th>
+              <th>Field of Study</th>
+              <th>School/Institution</th>
+              <th>Year</th>
+            </tr>
+            <tr>
+              <td>Bachelor of Science in Computer Science</td>
+              <td>Computer Science</td>
+              <td>Your University</td>
+              <td>Graduated in 2022</td>
+            </tr>
+            <tr>
+              <td>Master of Business Administration</td>
+              <td>Business Administration</td>
+              <td>Another University</td>
+              <td>Expected Graduation in 2024</td>
+            </tr>
+            <tr>
+              <td>High School Diploma</td>
+              <td>N/A</td>
+              <td>High School Name</td>
+              <td>Graduated in 2018</td>
+            </tr>
+            <tr>
+              <td>Certification in Web Development</td>
+              <td>Web Development</td>
+              <td>Online Learning Platform</td>
+              <td>Completed in 2021</td>
+            </tr>
+            <tr>
+              <td>Associate Degree in Graphic Design</td>
+              <td>Graphic Design</td>
+              <td>Community College</td>
+              <td>Graduated in 2016</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="certification">
+        <h3 class="title">certification</h3>
+        <div class="certification_item">
+          <p class="item_preTitle">2022</p>
+          <h4 class="item_title">Google Analytics Individual Qualification (GAIQ)</h4>
+          <p class="description">
+            Certified proficiency in using Google Analytics to analyze website traffic and user behavior.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="group-2">
+      <div class="exp">
+        <h3 class="title">Experience</h3>
+        <div class="exp_item">
+          <p class="item_preTitle">2021 - present</p>
+          <h4 class="item_title">Tech Solutions Inc.</h4>
+          <p class="item_subtitle">Software Engineer Intern</p>
+          <p class=" description">
+            <ul>
+              <li>Assisted in the development and testing of new software features.
+                Conducted code reviews and provided feedback for improvement.
+                Participated in team meetings to discuss project progress and brainstorm solutions.</li>
+            </ul>
+          </p>
+        </div>
+        <div class="exp_item">
+          <p class="item_preTitle">2023 - present</p>
+          <h4 class="item_title">Creative Web Solutions</h4>
+          <p class="item_subtitle">Web Development Intern</p>
+          <p class="description">
+            <ul>
+              <li> Designed and developed website layouts using HTML and CSS.
+                Implemented JavaScript functionalities to enhance user interaction.
+                Assisted in troubleshooting and resolving technical issues on client websites.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div class="awards">
+        <h3 class="title">Awards</h3>
+        <div class="awards_item">
+          <p class="item_preTitle">2021</p>
+          <h4 class="item_title">Outstanding Employee of the Year</h4>
+          <p class="description">
+            <ul>
+              <li>It is important to take care of the patient, to be followed by the patient, but it will happen at such a time that there is a lot of work and pain. Over the years, I will come. In Tech Solutions Inc.</li>
+            </ul>
+          </p>
+        </div>
+        <div class="awards_item">
+          <p class="item_preTitle">2016</p>
+          <h4 class="item_title">Student of the Year</h4>
+          <p class="description">
+            <ul>
+              <li>It is important to take care of the patient, to be followed by the patient, but it will happen at such a time that there is a lot of work and pain. Over the years, I will come. In Tech University.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="interest">
+        <h3 class="title">Interest</h3>
+        <div class="interest_items">
+          <div class="interest_item">
+            <div class="_img">
+              <img src="https://cdn-icons-png.freepik.com/256/2912/2912120.png?ga=GA1.1.1898439887.1708068401&" alt="Music">
+            </div>
+            <span>Music</span>
+          </div>
+          <div class="interest_item">
+            <div class="_img">
+              <img src="https://cdn-icons-png.freepik.com/256/5832/5832416.png?ga=GA1.1.1898439887.1708068401&" alt="Books">
+            </div>
+            <span>Books</span>
+          </div>
+          <div class="interest_item">
+            <div class="_img">
+              <img src="https://cdn-icons-png.freepik.com/256/2200/2200326.png?ga=GA1.1.1898439887.1708068401&" alt="Travel">
+            </div>
+            <span>Travel</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <hr>
+    <div class="group-3">
+      <div class="contact">
+        <h3 class="title">Contact</h3>
+        <div class="contact_info">
+          <div class="_img">
+            <img src="https://cdn-icons-png.freepik.com/256/854/854878.png?ga=GA1.1.1898439887.1708068401&" alt="place">
+          </div>
+          <p class="description">
+            Bhimavarm, Andhra Pradesh
+          </p>
+          <div class="_img">
+            <img src="https://cdn-icons-png.freepik.com/256/1538/1538493.png?ga=GA1.1.1898439887.1708068401&" alt="phone">
+          </div>
+          <p class="description">
+            +91 9555124540
+          </p>
+          <div class="_img">
+            <img src="https://cdn-icons-png.freepik.com/256/5968/5968534.png?ga=GA1.1.1898439887.1708068401&" alt="gmail">
+          </div>
+          <p class="description">
+            eswarsamanthula2005@gmail.com
+          </p>
+        </div>
+      </div>
+      <div></div>
+      <div></div>
+      <div class="social">
+        <h3 class="title">Socials</h3>
+        <div class="social_items">
+          <div class="_img">
+            <img src="https://cdn-icons-png.freepik.com/256/733/733553.png?ga=GA1.1.1898439887.1708068401&" alt="github">
+          </div>
+          <a href="https://github.com/eswarsamanthula" target="_blank" class="social_item">
+            <span>/github eswarsamanthula</span>
+          </a><br>
+          <div class="_img">
+            <img src="https://cdn-icons-png.freepik.com/256/733/733579.png?ga=GA1.1.1898439887.1708068401&" alt="twitter">
+          </div>
+          <a href="https://twitter.com/EswarSamanthula" target="_blank" class="social_item">
+            <span>/twitter @EswarSamanthula</span>
+          </a><br>
+          <div class="_img">
+            <img src="https://cdn-icons-png.freepik.com/256/145/145807.png?ga=GA1.1.1898439887.1708068401&" alt="linkedin">
+          </div>
+          <a href="https://www.linkedin.com/in/eswar-samanthula-4bb50a1a6/" target="_blank" class="social_item">
+            <span>/linkedin EswarSamanthula</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
